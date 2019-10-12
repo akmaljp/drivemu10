@@ -10,6 +10,7 @@ namespace akmaljp\drivemu;
 use Flarum\Formatter\Event\Configuring;
 use Illuminate\Events\Dispatcher;
 use s9e\TextFormatter\Configurator\Bundles\MediaPack;
+user fof\formatting;
 
 function subscribe(Dispatcher $events)
 {
@@ -21,8 +22,8 @@ function subscribe(Dispatcher $events)
 				'drivemu',
 				[
 					'host'    => 'drivemu.com',
-					'extract' => "!drivemu\\.com/download/(?'id'[-0-9A-Z_a-z]+)!",
-					'iframe'  => ['src' => 'https://drivemu.com/download/{@id}/']
+					'extract' => "!drivemu\\.com/video/(?'id'[-0-9A-Z_a-z]+)!",
+					'iframe'  => ['src' => 'https://drivemu.com/video/{@id}/']
 				]
 			);
 		}
