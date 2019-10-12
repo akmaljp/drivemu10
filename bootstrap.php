@@ -10,7 +10,7 @@ namespace akmaljp\drivemu;
 use Flarum\Formatter\Event\Configuring;
 use Illuminate\Events\Dispatcher;
 use s9e\TextFormatter\Configurator\Bundles\MediaPack;
-user fof\formatting;
+use fof\formatting;
 
 function subscribe(Dispatcher $events)
 {
